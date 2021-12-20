@@ -1,28 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css" />
-  
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-  We're coming soon
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="landing-page">
+        <header class="landing-page__header">
+          <img
+            class="landing-page__logo"
+            src="images/logo.svg"
+            alt="Base Apparel"
+          />
+          <picture class="landing-page__hero">
+            <img src="images/hero-mobile.jpg" alt="Hero image" />
+          </picture>
+        </header>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+        <main class="landing-page__copy">
+          <h1 class="landing-page__announcement">
+            <span>We're</span> coming soon
+          </h1>
 
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Abhishek Sisodia</a>.
-    </p>
-  </footer>
-</body>
+          <p class="landing-page__lead">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+
+          <form class="landing-page__form">
+            <input
+              type="email"
+              class="landing-page__email"
+              placeholder="Email Address"
+            />
+            <img src="images/icon-error.svg" class="landing-page__error-icon" alt="Error"/>
+            <label>
+              <input
+                type="submit"
+                class="landing-page__submit"
+              />
+              <div class="landing-page__cta">
+                <img src="images/icon-arrow.svg" alt="Submit" />
+              </div>
+            </label>
+          </form>
+          <p class="landing-page__error-text">
+            Please provide a valid email
+          </p>
+        </main>
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Abhishek Sisodia</a>.
+      </p>
+    </footer>
+
+    <script src="application.js"></script>
+  </body>
 </html>
