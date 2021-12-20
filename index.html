@@ -23,10 +23,12 @@
             src="images/logo.svg"
             alt="Base Apparel"
           />
-          <picture class="landing-page__hero">
-            <img src="images/hero-mobile.jpg" alt="Hero image" />
-          </picture>
         </header>
+
+        <picture class="landing-page__hero">
+          <source srcset="images/hero-desktop.jpg" media="(min-width: 45rem)" >
+          <img src="images/hero-mobile.jpg" alt="Hero image" />
+        </picture>
 
         <main class="landing-page__copy">
           <h1 class="landing-page__announcement">
